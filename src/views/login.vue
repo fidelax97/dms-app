@@ -1,7 +1,7 @@
 <template>
     <div class="content">
         <div class="login">
-            <!-- <img class="logo-img" src="../assets/logo_utm.png" alt="logo"> -->
+            <img class="logo-img" src="../assets/logo_utm.png" alt="logo">
             <b-form class="login-form" @submit="onSubmit" v-if="show">
             <b-form-group id="input">
                 <b-form-input
@@ -48,7 +48,7 @@ export default {
     methods: {
       onSubmit(event) {
         event.preventDefault();
-        alert("Login success");
+        alert("Login success. Username: "+this.form.username +" Password: "+this.form.password);
          // Reset our form values
         this.form.username = '';
         this.form.password = '';
