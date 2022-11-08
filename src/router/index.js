@@ -7,12 +7,12 @@ export default new Router({
   mode: 'history',
   routes: [
     {
-      path: '/login',
+      path: '/login/',
       name: 'Login',
       component: () => import("../views/login"),
     },
     {
-      path: '/register',
+      path: '/register/',
       name: 'Register',
       component: () => import("../views/register"),
     }
